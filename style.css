@@ -1,0 +1,138 @@
+body {
+    background-color: hsl(205, 100%, 96%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 90vw;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: hsl(204, 44%, 75%);
+}
+
+.review {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: calibri;
+}
+
+.line {
+    background-color: rgb(111, 205, 205);
+    height: 4px;
+    width: 100px;
+    margin: 10px auto 50px auto;
+    border-radius: 5px;
+}
+
+#author {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#job {
+    margin-top: -5px;
+    color: rgb(89, 169, 169);
+    font-size: 0.9rem;
+}
+
+.info {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.prev-btn, .next-btn {
+    border: none;
+    background-color: white;
+    color: rgb(89, 169, 169);
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.random-btn {
+    margin-top: 15px;
+    background-color: rgb(197, 248, 250);
+    border: 1px solid rgb(89, 169, 169);
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90vw;
+        top: 50px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .review {
+        padding: 1rem 1.5rem;
+    }
+
+    #author, #job, .info {
+        font-size: 0.85rem;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 1.25rem;
+    }
+
+    .random-btn {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .review {
+        padding: 0.8rem 1rem;
+    }
+
+    #author, #job, .info {
+        font-size: 0.75rem;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 1rem;
+    }
+
+    .random-btn {
+        padding: 5px 10px;
+    }
+}
